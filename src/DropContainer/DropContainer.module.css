@@ -1,0 +1,48 @@
+.highlight {
+  height: 2px;
+  width: 100%;
+  background-color: unset;
+}
+
+.highlight.active {
+  background-color: #ffa500;
+}
+
+.build_zone_wrapper {
+  width: 250px;
+  height: 470px;
+  display: grid;
+  border: 2px dashed #c4c4c4;
+  border-radius: 5px;
+}
+
+.build_zone {
+  display: flex;
+  align-items: stretch;
+  flex: 1;
+  flex-direction: column;
+}
+
+.build_zone_runtime {
+  border: none;
+}
+
+.build_zone_message {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.build_zone_message_heading {
+  color: #ffa500;
+}
+
+.build_zone_message_text {
+  color: #6b7280;
+  font-size: 14px;
+}
+
+.build_zone_highlight {
+  background-color: #f0f9ff;
+}
