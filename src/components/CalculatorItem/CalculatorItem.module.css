@@ -6,15 +6,13 @@
   left: 0;
   right: 0;
   bottom: 0;
-  box-shadow: 0px 4px 6px 0px #0000001a;
+  border-radius: 5px;
 }
 
 .display {
   height: 70px;
-  background-color: dimgrey;
-  border: 1px solid grey;
-  color: white;
-  border-radius: 6px 6px 0 0;
+  background-color: #f3f4f6;
+  border: 5px solid white;
   position: relative;
 }
 
@@ -23,52 +21,53 @@
   bottom: 0;
   right: 0;
   font-size: 22px;
+  font-weight: 600;
 }
 
 .operand_buttons {
-  height: 60px;
+  height: 50px;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
+  gap: 5px;
+  padding: 5px;
+}
+.num_buttons {
+  gap: 5px;
+  padding: 5px;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .num_buttons button {
-  width: 33.33%;
+  width: 73.3px;
   height: 60px;
-  background-color: grey;
-  border: 1px solid dimgrey;
-  color: white;
 }
 .num_buttons button:nth-last-child(-n + 2) {
-  width: 50%;
-}
-
-.num_buttons button:active {
-  background-color: rgb(192, 189, 189);
+  width: 112.5px;
 }
 
 button {
   padding: 0px;
-  font-weight: 600;
-}
-
-.equalButton {
-  border-radius: 0 0 6px 6px;
+  font-weight: 500;
+  border-radius: 5px;
 }
 
 .operand_buttons button,
+.num_buttons button,
 .equalButton button {
-  border: 1px solid grey;
-  background-color: #ffa500;
-  color: white;
+  background-color: transparent;
+  border: 1px solid lightgrey;
 }
 
 .equalButton button {
   width: 100%;
-  height: 50px;
-  border-radius: 0 0 6px 6px;
+  height: 70px;
+  background-color: #5d5fef;
+  color: white;
 }
 
 .operand_buttons button:active,
+.num_buttons button:active,
 .equalButton button:active {
-  background-color: #d8900a;
+  border: 1px solid #5d5fef;
 }

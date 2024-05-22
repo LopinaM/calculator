@@ -10,7 +10,7 @@
   height: 600px;
   margin: 0 auto;
   grid-template:
-    "h h"
+    "h1 h2"
     "c d";
 }
 
@@ -19,8 +19,13 @@
   align-self: center;
 }
 
-.app_header {
-  grid-area: h;
+.app_header1 {
+  grid-area: h1;
+}
+
+.app_header2 {
+  grid-area: h2;
+  justify-self: center;
   align-self: self-end;
 }
 
@@ -33,9 +38,7 @@
 }
 
 .calculator {
-  width: 250px;
-  height: 470px;
-  border-radius: 5px;
-  border: 2px solid #c4c4c4;
+  width: 300px;
+  height: 500px;
   display: grid;
 }

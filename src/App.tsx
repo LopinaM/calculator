@@ -11,7 +11,8 @@ const App = () => {
 
   return (
     <div className="app_wrapper">
-      <div className="app_header grid_center">
+      <div className="app_header1"></div>
+      <div className="app_header2">
         <OptionButton />
       </div>
       <div className="app_sidebar grid_center">

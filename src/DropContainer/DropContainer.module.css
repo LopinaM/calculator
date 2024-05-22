@@ -5,12 +5,12 @@
 }
 
 .highlight.active {
-  background-color: #ffa500;
+  background-color: #5d5fef;
 }
 
 .build_zone_wrapper {
-  width: 250px;
-  height: 470px;
+  width: 300px;
+  height: 500px;
   display: grid;
   border: 2px dashed #c4c4c4;
   border-radius: 5px;
@@ -35,7 +35,7 @@
 }
 
 .build_zone_message_heading {
-  color: #ffa500;
+  color: #5d5fef;
 }
 
 .build_zone_message_text {

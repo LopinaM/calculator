@@ -1,9 +1,10 @@
 .calc_block {
   box-shadow: 0px 4px 6px 0px #0000001a;
-  border-radius: 4px;
+  border-radius: 5px;
   width: 240px;
   justify-self: center;
   align-self: center;
+  gap: 5;
 }
 
 .disabled {
@@ -12,4 +13,8 @@
 
 .disabled_cursor {
   cursor: no-drop;
+}
+
+.disabled_box_shadow {
+  box-shadow: none;
 }
