@@ -39,9 +39,10 @@ const DraggableItem: React.FC<DraggableItemProps> = ({
 
   const disabledClass =
     !canDrag && section !== "BuildZoneSection" ? " " + s.disabled : "";
+  const dClass = canDrag ? " " + s.dcursor : "";
   const disabledCursor =
-    !canDrag && mode !== "runtime" ? " " + s.disabled_cursor : "";
-  const shadowClass =
+    !canDrag && mode !== "runtime" ? " " + s.disabled_cursor : " ";
+  const shadowCursor =
     !canDrag && mode === "runtime" ? " " + s.disabled_box_shadow : "";
 
   return (
@@ -55,7 +56,9 @@ const DraggableItem: React.FC<DraggableItemProps> = ({
         }
       }}
       ref={drag}
-      className={s.calc_block + disabledClass + disabledCursor + shadowClass}
+      className={
+        s.calc_block + dClass + disabledClass + disabledCursor + shadowCursor
+      }
     >
       {children}
     </div>

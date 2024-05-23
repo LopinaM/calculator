@@ -1,5 +1,5 @@
+import { MAXdisplay, evaluate, isNumber, isOperator } from "../utils/calcUtils";
 import { CALCULATE, PLACE_BLOCK, REMOVE_BLOCK, SET_MODE } from "./actions";
-import { MAXdisplay, evaluate, isNumber, isOperator } from "../utils";
 
 interface CalculatorState {
   blocks: Array<{ name: string }>;

@@ -4,11 +4,16 @@
   width: 240px;
   justify-self: center;
   align-self: center;
+  display: grid;
   gap: 5;
 }
 
 .disabled {
   opacity: 0.5;
+}
+
+.dcursor {
+  cursor: all-scroll;
 }
 
 .disabled_cursor {
@@ -17,4 +22,5 @@
 
 .disabled_box_shadow {
   box-shadow: none;
+  cursor: default;
 }

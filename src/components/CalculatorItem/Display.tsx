@@ -5,6 +5,7 @@ import DraggableItem, {
   DraggableItemProps,
 } from "../../DraggableContainer/DraggableContainer";
 import s from "./CalculatorItem.module.css";
+import { calculateFontSize } from "../../utils/calcFS";
 
 const Display = (props: DraggableItemProps) => {
   const result = useSelector((state: RootState) => state.calculator.result);
@@ -12,7 +13,9 @@ const Display = (props: DraggableItemProps) => {
   return (
     <DraggableItem {...props}>
       <div className={s.display}>
-        <span>{result}</span>
+        <span style={{ fontSize: `${calculateFontSize(result)}` }}>
+          {result}
+        </span>
       </div>
     </DraggableItem>
   );
